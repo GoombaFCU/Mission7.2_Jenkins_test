@@ -1,4 +1,4 @@
-package Mission_7-2;
+package Mission_7_2;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
