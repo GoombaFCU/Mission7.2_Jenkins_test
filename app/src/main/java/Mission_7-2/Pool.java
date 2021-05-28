@@ -8,9 +8,9 @@ public class Pool {
 		int pay = 200;
 		double save = 1.0;
 		
-		if(Time >= 5.0 || Time <= 22.0) {
+		if(Time >= 5.0 && Time <= 22.0) {
 			if(Age >= 3 && Age <= 75) {
-				if(Date.equals("Sat") || Date.equals("Sun")) {
+				if(Date.equals("Sat") && Date.equals("Sun")) {
 					pay = 250;
 					if(Qualifications.equals("Member")) save = 0.5;
 				}
