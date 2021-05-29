@@ -15,11 +15,11 @@ class PoolTest {
 	void Test_02_Weak_Cover() throws Exception {
 		assertEquals(125, P.Cash_check("Member", "Sat", 40, 10));
 	}
-	/*
 	@Test
 	void Test_03_Weak_Cover() throws Exception {
 		assertEquals(140, P.Cash_check("Group", "Mon", 40, 10));
 	}
+	/*
 	@Test
 	void Test_04_Weak_Cover() throws Exception {
 		assertEquals(160, P.Cash_check("Normal", "Mon", 11, 6));
