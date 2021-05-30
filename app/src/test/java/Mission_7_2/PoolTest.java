@@ -28,7 +28,7 @@ class PoolTest {
 	void Test_05_Weak_Cover() throws Exception {
 		assertEquals(200, P.Cash_check("Normal", "Mon", 40, 10));
 	}
-	/*
+
 	@Test
 	void Test_06_Weak_Cover() throws Exception {
 		assertEquals(250, P.Cash_check("Normal", "Sat", 40, 6));
@@ -38,6 +38,7 @@ class PoolTest {
 		Exception e = assertThrows(Exception.class, ()->P.Cash_check("Normal", "Mon", 2, 4));
 		assertEquals("The swimming pool is close now.", e.getMessage());
 	}
+	/*
 	@Test
 	void Test_08_For_Coverage() throws Exception {
 		Exception e = assertThrows(Exception.class, ()->P.Cash_check("Normal", "Mon", 2, 23));
