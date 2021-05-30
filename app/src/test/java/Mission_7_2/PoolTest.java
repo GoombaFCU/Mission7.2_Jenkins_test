@@ -19,7 +19,7 @@ class PoolTest {
 	void Test_03_Weak_Cover() throws Exception {
 		assertEquals(140, P.Cash_check("Group", "Mon", 40, 10));
 	}
-	/*
+	
 	@Test
 	void Test_04_Weak_Cover() throws Exception {
 		assertEquals(160, P.Cash_check("Normal", "Mon", 11, 6));
@@ -32,6 +32,7 @@ class PoolTest {
 	void Test_06_Weak_Cover() throws Exception {
 		assertEquals(250, P.Cash_check("Normal", "Sat", 40, 6));
 	}
+	/*
 	@Test
 	void Test_07_Weak_Cover() throws Exception {
 		Exception e = assertThrows(Exception.class, ()->P.Cash_check("Normal", "Mon", 2, 4));
