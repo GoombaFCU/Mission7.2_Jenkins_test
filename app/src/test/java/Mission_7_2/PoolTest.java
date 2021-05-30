@@ -28,11 +28,11 @@ class PoolTest {
 	void Test_05_Weak_Cover() throws Exception {
 		assertEquals(200, P.Cash_check("Normal", "Mon", 40, 10));
 	}
+	/*
 	@Test
 	void Test_06_Weak_Cover() throws Exception {
 		assertEquals(250, P.Cash_check("Normal", "Sat", 40, 6));
 	}
-	/*
 	@Test
 	void Test_07_Weak_Cover() throws Exception {
 		Exception e = assertThrows(Exception.class, ()->P.Cash_check("Normal", "Mon", 2, 4));
