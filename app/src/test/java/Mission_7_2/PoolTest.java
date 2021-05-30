@@ -43,7 +43,6 @@ class PoolTest {
 		Exception e = assertThrows(Exception.class, ()->P.Cash_check("Normal", "Mon", 2, 23));
 		assertEquals("The swimming pool is close now.", e.getMessage());
 	}
-	/*
 	@Test
 	void Test_09_For_Coverage() throws Exception {
 		Exception e = assertThrows(Exception.class, ()->P.Cash_check("Normal", "Mon", 2, 10));
@@ -66,5 +65,4 @@ class PoolTest {
 	void Test_13_For_Coverage() throws Exception {
 		assertEquals(160, P.Cash_check("Normal", "Mon", 60, 8));
 	}
-	*/
 }
