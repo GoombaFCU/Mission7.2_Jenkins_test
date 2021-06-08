@@ -9,19 +9,6 @@ pipeline {
                     branch 'dev'
                 }
             } */
-            stage('sonarqube-analysis'){
-                environment {
-                    SONAR_TOKEN = credentials('sonarqube_token')
-                }
-                steps {
-                    sh '''./gradlew sonarqube \
-                        -Dsonar.projectKey=D0611181_homework_7_3 \
-                        -Dsonar.host.url=http://140.134.26.54:10990 \
-                        -Dsonar.login=$SONAR_TOKEN
-                    '''
-                }
-
-            }
             steps {
                 sh 'chmod +x ./gradlew'
                 sh './gradlew test'
@@ -32,6 +19,19 @@ pipeline {
                     execPattern: 'app/build/jacoco/**/*.exec'
                 )
             }
+        }
+        stage('sonarqube-analysis'){
+            environment {
+               SONAR_TOKEN = credentials('sonarqube_token')
+            }
+            steps {
+                sh '''./gradlew sonarqube \
+                    -Dsonar.projectKey=D0611181_homework_7_3 \
+                    -Dsonar.host.url=http://140.134.26.54:10990 \
+                    -Dsonar.login=$SONAR_TOKEN
+                '''
+            }
+
         }
     }
 }
