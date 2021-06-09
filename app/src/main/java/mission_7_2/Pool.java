@@ -1,4 +1,4 @@
-package mission7_2;
+package mission_7_2;
 
 public class Pool {
 	/*
