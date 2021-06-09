@@ -4,22 +4,22 @@ public class Pool {
 	/*
 	 * Made by D0611181
 	 */
-    public int Cash_check(String Qualifications, String Date, int Age, double Time) throws Exception	{
+    public int cash_Check(String qualifications, String date, int age, double time) throws Exception	{
 		int pay = 200;
 		double save = 1.0;
 		
-		if(Time >= 5.0 && Time <= 22.0) {
-			if(Age >= 3 && Age <= 75) {
-				if(Date.equals("Sat") || Date.equals("Sun")) {
+		if(time >= 5.0 && time <= 22.0) {
+			if(age >= 3 && age <= 75) {
+				if(date.equals("Sat") || date.equals("Sun")) {
 					pay = 250;
-					if(Qualifications.equals("Member")) save = 0.5;
+					if(qualifications.equals("Member")) save = 0.5;
 				}
 				else {
-					if(Qualifications.equals("Member")) save = 0.5;
-					else if(Qualifications.equals("Group")) save = 0.7;
+					if(qualifications.equals("Member")) save = 0.5;
+					else if(qualifications.equals("Group")) save = 0.7;
 					else {
-						if(Time <= 7.0) save = 0.8;
-						else if(Age < 12 || Age >= 60) save = 0.8;
+						if(time <= 7.0) save = 0.8;
+						else if(age < 12 || age >= 60) save = 0.8;
 						else save = 1.0;
 					}
 				}
