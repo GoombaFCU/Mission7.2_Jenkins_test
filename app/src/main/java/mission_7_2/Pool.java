@@ -4,7 +4,7 @@ public class Pool {
 	/*
 	 * Made by D0611181
 	 */
-    public int cash_Check(String qualifications, String date, int age, double time) throws Exception	{
+    public int cashCheck(String qualifications, String date, int age, double time) throws Exception	{
 		int pay = 200;
 		double save = 1.0;
 		
