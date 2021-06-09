@@ -4,7 +4,7 @@ public class Pool {
 	/*
 	 * Made by D0611181
 	 */
-    public int cashCheck(String qualifications, String date, int age, double time) throws Exception	{
+    public int cashCheck(String qualifications, String date, int age, double time) throws MyException{
 		int pay = 200;
 		double save = 1.0;
 		
@@ -25,15 +25,22 @@ public class Pool {
 				}
 			}
 			else {
-				throw new Exception("This age is not alow to enter the swimming pool.");
+				throw new MyException("This age is not alow to enter the swimming pool.");
 			}
 		}
 		else {
-			throw new Exception("The swimming pool is close now.");
+			throw new MyException("The swimming pool is close now.");
 		}
 		
 		pay = (int)(pay * save);
 		
 		return pay;
+	}
+}
+
+class MyException extends Exception{
+
+	MyException(String msg){
+		super(msg);
 	}
 }
